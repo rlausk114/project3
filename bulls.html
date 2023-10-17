@@ -4,9 +4,40 @@
 <meta charset="UTF-8">
 <title>Document</title>
 
+<style>
+
+    *{margin: 0px; padding:0px}
+    body{background:#eaeaea;}
+    li, ul{list-style: none;}
+    header{width:100%; height:80px;background:lightpink; }
+    #header{width:1200px; height: 80px;margin: 0 auto;}
+    #header #logo{position: absolute; top: 10px;}
+    #header>ul{width:780px; height: 80px;position: relative; left:300px;}
+    #header>ul>li{float: left;width: 130px; height: 80px;position: relative;}
+    #header>ul>li>.red{width: 130px; height:80px; position: absolute; bottom:5px; }
+    #header>ul>li>.red>p{width: 0px; height: 80px;margin: 0 auto; border-bottom: 4px solid red; transition: all 0.5s;}
+    #header>ul>li:hover>.red>p{width: 130px;}
+    #header>ul>li>a{display: block; width: 130px; height: 80px;line-height: 80px;text-align: center;
+                    color: black; font-size: 14px; font-weight: bold;}
+    #header>ul>li>.sme{width: 160px; height:0; position: relative;left:0; background:white;top:0;
+                    overflow: hidden;z-index: 9;}
+    #header>ul>li>.sme>li{width: 160px;height:  30px;margin-left: 10px; margin-top: 10px; font-size: 12px;} 
+    #header>ul>li>.sme>li>a{display: block; width: 160px;height: 30px;}
+    #header>ul>li:nth-of-type(2):hover>.sme{height: 280px;}
+    #header>ul>li:nth-of-type(3):hover>.sme{height: 160px;}
+    #header>ul>li:nth-of-type(4):hover>.sme{height: 80px;}
+
+    #eheqhrl{width: 200px; height: 100px; position: absolute;right: 280px; top:25px;}
+    #eheqhrl li{float: left; margin-left: 20px;}
+
+
+     
+    </style>
+
 </head>
-<body>
-<header>
+
+<body>   
+<header>   
 <div id="header">
 <div id="logo"><img src="images/logo.png"></div>
 <ul>
