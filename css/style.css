@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR&family=Oswald:wght@200;400&display=swap');
+
+/*
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
+
+
+
+
+*{margin: O; padding: 0; box-sizing: border-box;}
+ul,li{list-style: none;}
+a{text-decoration: none; color:#02253b;font-family: 'Noto Sans KR', sans-serif;}
+
+body{width: 100%; height: 100%;}
+.header_warp{width: 100%;height: 100px;
+    border-bottom: 1px solid #000;
+ }
+header{width: 1300px;height: 100px;
+    position: relative;
+    margin: 0 auto;
+    
+    }
+
+
+.logo{width:280px; height: 50px;
+    position: relative; top:20px; left:0;
+    object-fit: cover;
+    padding-top: 10px;
+}
+
+.logo img{width:280px; height: 50px; object-fit: cover;}
+
+
+.gnb{width:1020px;height: 100px;
+    position:absolute; left: 280px;top:0;
+  }
+
+.gnb>ul{width:100%;height: 100px;
+    
+}
+
+
+.gnb>ul>li{width: 160px; height: 80px; margin-right: 10px;
+float: left;}
+
+/*메뉴 바 밑에 검은선  호버시 나오게 */ 
+.gnb>ul>li::before{content:"";
+    width:100px; height: 5px; 
+    background:#02253b;
+    position: absolute;
+bottom:0px; 
+margin-left: 60px;
+opacity: 0;}
+
+.gnb>ul>li:hover::before{opacity: 1;} 
+
+.gnb>ul>li>a{display: block;
+width: 100%; height: 80px;  
+text-align: right;
+padding-right: 10px;
+line-height: 75px;
+font-size: 17px;
+font-weight:600;
+
+}
+
+.gnb>ul>li:hover>a{color: #afafaf;} 
+ 
+.gnb>ul>li:hover> .header_warp{border-bottom:1px solid #979797;} /*적용안되는듯*/
+
+
+.gnb>ul>li>.subm{width: 170px; height: 240px;
+    margin-top:20px; 
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 999;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+
+}
+
+
+/*적용안되는듯*/
+.navbg{width: 100%; height: 0;
+background-color: #fff;
+position: absolute;
+z-index: 99;
+left:0; top:100px;
+transition: all 0.5s;}
+
+.gnb>ul:hover .navbg{height: 280px;
+transition: all 0.5s;}
+.gnb>ul:hover .subm{opacity: 1; transition: all 0.5s;}
+
+
+
+.gnb>ul>li>.subm>li{width: 100%;height: 40px;
+    text-align: right;}
+
+.gnb>ul>li>.subm>li>a{display: block;
+     font-size: 14px;
+     padding-right: 10px;
+    color: #979797;}
+
+.gnb>ul>li>.subm>li>a>img{width:5%; margin-right: 5px;
+display: none;}
+
+.gnb>ul>li>.subm>li:hover >a>img{display: inline-block;}
+
+
+section .slide_wrap{position:relative;left:0; top:0px;width: 1920px;height: 100%; margin: 0 auto; }
+
+
+
+
+ 
+
+
